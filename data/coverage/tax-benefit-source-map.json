@@ -1,7 +1,20 @@
 {
-  "generated_at": "TODO(fr)",
+  "generated_at": "2026-08-28",
   "jurisdiction": "fr",
-  "validation_year": "TODO(fr)",
-  "note": "TODO(fr): map the tax-benefit surface to governing law.",
-  "instruments": []
+  "validation_year": "2022",
+  "note": "Bounded IFI intake for the Cantó and García-Rodríguez replication. This prepared manifest path is not a signed corpus-release binding.",
+  "source_intake": {
+    "status": "prepared_pending_publication",
+    "manifests": [
+      "manifests/fr-ifi-2022-statute-official-documents.yaml"
+    ]
+  },
+  "instruments": [
+    {
+      "instrument": "Impôt sur la fortune immobilière",
+      "governing_law": "Code général des impôts, Articles 964 through 983, 2022 version",
+      "corpus_citation_path": "fr/statute/cgi/2022/ifi",
+      "status": "manifested_not_ingested"
+    }
+  ]
 }

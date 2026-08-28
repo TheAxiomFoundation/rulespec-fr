@@ -1,17 +1,17 @@
 # rulespec-fr
 
-RuleSpec lane scaffold for France. TODO(fr): replace jurisdiction substance placeholders.
+RuleSpec lane scaffold for France's 2022 IFI scope.
 
 This scaffold emits scaffold-adapted layout tests; the lane grows into the full
 migrated-lane suite as it fills in.
 
 ## Lane bring-up sequence
 
-1. Complete `corpus-manifest-skeleton.yaml`, move it to axiom-corpus `manifests/`, and open the corpus manifest PR.
-2. Ingest the captured sources through the corpus pipeline.
+1. Publish the prepared axiom-corpus manifest listed in `data/coverage/tax-benefit-source-map.json`.
+2. Ingest that source through the corpus pipeline.
 3. Cut and sign the first immutable `fr` corpus release.
 4. Land the dedicated gated `.axiom/toolchain.toml` PR with the real three-key binding.
-5. Replace every workflow `<pin-me>` with reviewed commit SHAs.
+5. Replace every workflow `<pin-me>` in the same dedicated post-release toolchain PR, using an encoder-supported workflow pin.
 6. Encode the first module through the supervised runtime; do not hand-author RuleSpec.
 7. Run `axiom-encode ci` locally with the explicit dependency checkouts and release public key.
 
